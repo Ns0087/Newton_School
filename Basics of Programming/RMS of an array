@@ -1,0 +1,28 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+import java.lang.Math;
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+    public static void main (String[] args) {
+      // Your code here
+      Scanner sc = new Scanner(System.in);
+      short N = sc.nextShort();
+      int Ai[] = new int[N];
+      double sum = 0;
+
+      for(short i = 0; i < N; i++)
+      {
+          Ai[i] = sc.nextInt();
+      }
+
+      for(int print : Ai)
+      {
+          sum += print*print;
+      }
+
+      double mean = sum/N;
+      System.out.printf("%.6f", Math.sqrt(mean));
+    }
+}
