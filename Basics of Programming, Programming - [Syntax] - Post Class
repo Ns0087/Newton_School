@@ -1,6 +1,0 @@
-static String checkConevrtion(int a)
- {
-       // your code here
-       String N = Integer.toString(a);
-       return N;
-}
